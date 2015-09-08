@@ -42,3 +42,6 @@ rvm_gpg_key_server: 'hkp://keys.gnupg.net'
 
 # autolib mode, see https://rvm.io/rvm/autolibs
 rvm_autolib_mode: 3
+
+# The version of bundler to install
+rvm_bundler_version: '1.10.6'
