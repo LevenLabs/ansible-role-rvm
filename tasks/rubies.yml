@@ -12,7 +12,7 @@
   command: '{{ rvm_rvm }} install {{ item.item }} {{ rvm_ruby_install_flags }}'
   when: rvm_rubies and item.rc != 0
   with_items: detect_rubies.results
-  become: '{{ rvm_user }}'
+  become_user: '{{ rvm_user }}'
 
 - name: Detect default ruby version
   command: '{{ rvm_rvm }} alias list default'
